@@ -1,0 +1,15 @@
+.Side-bar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.Home {
+    margin-left: 88px;
+    margin-top: 94px;
+}
+
+.bigMargin {
+    margin-left: 288px;
+}

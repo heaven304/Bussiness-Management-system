@@ -1,9 +1,9 @@
 .header {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     height: auto;
-    /* width: 100%; */
+    width: 100%;
     background-color: gray;
     color: #fff;
     transition: transform 0.3s ease-in-out;
