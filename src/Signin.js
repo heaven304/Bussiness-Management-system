@@ -5,7 +5,19 @@ import { useFormik } from 'formik';
 import './Header.css'
 
 
+
 export default function Signin() {
+<<<<<<< HEAD
+
+
+  return (
+    <>
+      <Layout>
+
+      </Layout>
+    </>
+  )
+=======
   const formik = useFormik({
     initialValues: {
       firstName: '',
@@ -129,4 +141,5 @@ export default function Signin() {
       </div>
     </Layout>
   );
+>>>>>>> 108f6e204eba3670159cd693da3f80eaf22f2b51
 }
