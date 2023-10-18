@@ -42,7 +42,7 @@ export default function Signin() {
   return (
     <Layout>
       <div className="Mitesh container text-center">
-        <br /><br /><br />
+
         <form onSubmit={formik.handleSubmit}>
           <h1>Signin</h1>
           <div className='row d-flex justify-content-center'>
@@ -59,7 +59,7 @@ export default function Signin() {
               {formik.errors.firstName && formik.touched.firstName && (
                 <p>{formik.errors.firstName}</p>
               )}
-            </div>
+            </div> <br />
 
             <div className="col-lg-4 mt-4">
               {/* <label>Last Name</label> */}
@@ -74,7 +74,7 @@ export default function Signin() {
               {formik.errors.lastName && formik.touched.lastName && (
                 <p>{formik.errors.lastName}</p>
               )}
-            </div>
+            </div><br />
 
             <div className="col-lg-4 mt-4">
               {/* <label>Email</label> */}
@@ -89,7 +89,7 @@ export default function Signin() {
               {formik.errors.email && formik.touched.email && (
                 <p>{formik.errors.email}</p>
               )}
-            </div>
+            </div><br />
 
             <div className="col-lg-4 mt-4">
               {/* <label>Password</label> */}
@@ -104,7 +104,7 @@ export default function Signin() {
               {formik.errors.password && formik.touched.password && (
                 <p>{formik.errors.password}</p>
               )}
-            </div>
+            </div><br />
 
             <div className="col-lg-4 mt-4">
               {/* <label>Confirm Password</label> */}

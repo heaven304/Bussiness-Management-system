@@ -2,6 +2,7 @@ import React from 'react'
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import './login.css'
 
 export default function Login() {
     const formik = useFormik({
@@ -27,7 +28,8 @@ export default function Login() {
 
     return (
         <>
-            <div class="container">
+
+            <div class="container  divv">
                 <div class="card">
                     <h2>Login Form</h2>
 
