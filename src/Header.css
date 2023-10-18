@@ -132,15 +132,16 @@ button:hover {
         width: 100%;
         max-width: 350px;
     }
-.Mitesh {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f9fa;
-    width: 100%;
-    height: 663px;
-    padding-top: 150px;
-}
+
+    .Mitesh {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+        width: 100%;
+        height: 663px;
+        padding-top: 150px;
+    }
 
     .Mitesh {
         display: flex;
@@ -165,6 +166,8 @@ button:hover {
     .mt-4 {
         margin-top: 1.5rem rem !important;
     }
-.mt-4 {
-    margin-top: 1.5rem rem !important;
+
+    .mt-4 {
+        margin-top: 1.5rem rem !important;
+    }
 }
