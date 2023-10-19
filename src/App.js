@@ -7,6 +7,7 @@ import Home from './Home';
 import Additem from './Additem';
 import Signin2 from './Signin2';
 import Login2 from './Login2';
+import Sidebar from './Sidebar';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/additem" element={<Additem />} />
           <Route path="/ss" element={<Signin2 />} />
           <Route path="/sss" element={<Login2 />} />
+          <Route path="/s" element={<Sidebar />} />
 
         </Routes>
       </BrowserRouter>
