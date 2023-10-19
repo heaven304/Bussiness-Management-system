@@ -142,12 +142,15 @@ export default function Signin2() {
                                                         ) : null}
                                                     </label>
                                                 </div>
-                                                <button
-                                                    type="submit"
-                                                    className="btn btn-success btn-lg float-right"
-                                                >
-                                                    Login
-                                                </button>
+                                                <div className="d-flex justify-content-center">
+
+                                                    <button
+                                                        type="submit"
+                                                        className="btn btn-success btn-lg float-right"
+                                                    >
+                                                        Login
+                                                    </button>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>

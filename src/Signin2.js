@@ -13,8 +13,8 @@ export default function Signin2() {
             remember: false
         },
         validationSchema: Yup.object({
-            email: Yup.string()
-                .email("Email should be in right format")
+            username: Yup.string()
+                .min(5, "Must be 5 characters or less")
                 .required("Required"),
             password: Yup.string()
                 .min(8, "Must be 8 characters or less")
@@ -56,14 +56,14 @@ export default function Signin2() {
                                             <div className="card-body">
                                                 <form className="form" onSubmit={formik.handleSubmit}>
                                                     <div className="form-group">
-                                                        <label for="email">Email</label>
+                                                        <label for="username">username</label>
                                                         <input
                                                             type="text"
                                                             className="form-control"
-                                                            {...formik.getFieldProps("email")}
+                                                            {...formik.getFieldProps("username")}
                                                         />
-                                                        {formik.touched.email && formik.errors.email ? (
-                                                            <div className="is-invalid">{formik.errors.email}</div>
+                                                        {formik.touched.username && formik.errors.username ? (
+                                                            <div className="is-invalid">{formik.errors.username}</div>
                                                         ) : null}
                                                     </div>
                                                     <div className="form-group">
@@ -91,12 +91,16 @@ export default function Signin2() {
                                                             ) : null}
                                                         </label>
                                                     </div>
-                                                    <button
-                                                        type="submit"
-                                                        className="btn btn-success btn-lg float-right"
-                                                    >
-                                                        Login
-                                                    </button>
+
+                                                    <div className="d-flex justify-content-center">
+
+                                                        <button
+                                                            type="submit"
+                                                            className="btn btn-success btn-lg float-right"
+                                                        >
+                                                            Login
+                                                        </button>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
