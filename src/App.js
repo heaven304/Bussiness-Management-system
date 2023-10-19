@@ -18,9 +18,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/additem" element={<Additem />} />
-          <Route path="/signin" element={<Signin2 />} />
-          <Route path="/signup" element={<Login2 />} />
-          <Route path="/siderbar" element={<Sidebar />} />
+          <Route path="/ss" element={<Signin2 />} />
+          <Route path="/sss" element={<Login2 />} />
+          <Route path="/s" element={<Sidebar />} />
 
         </Routes>
       </BrowserRouter>
