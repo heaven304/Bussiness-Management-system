@@ -5,14 +5,20 @@
 }
 
 
-.Home {
-    margin-left: 88px;
-    margin-top: 94px;
-}
 
 .bigMargin {
     margin-left: 288px;
 } */
+
+.Home {
+    margin-left: 288px;
+
+}
+
+
+.hk {
+    margin-left: 114px;
+}
 
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
@@ -22,6 +28,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-size: xx-large;
 }
 
 :root {
@@ -40,11 +47,7 @@
     --tran-05: all 0.3s ease;
 }
 
-.body {
-    min-height: 100vh;
-    background-color: var(--body-color);
-    transition: var(--tran-05);
-}
+
 
 ::selection {
     background-color: var(--primary-color);
@@ -343,4 +346,12 @@ header .image-text .profession {
 
 .body.dark .home .text {
     color: var(--text-color);
+}
+
+.asd {
+    padding: 2px;
+}
+
+@media screen and (max-width:500px) {
+    
 }
