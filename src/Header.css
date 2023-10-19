@@ -49,21 +49,36 @@
 }
 
 /* @media screen and (max-width: 500px) { */
-    .header a {
-        float: none;
-        display: block;
-    }
+.header a {
+    float: none;
+    display: block;
+}
 
-    .header-right {
-        float: none;
-        margin-top: 20px;
-    }
+.header-right {
+    float: none;
+    margin-top: 20px;
+}
+
 /* } */
 
 
 
+/* header finish */
+
+
+/* style.css */
+
+.root {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* @media (max-width: 480px) { */
-    .card {
+/* .card {
         width: 100%;
         max-width: 350px;
     }
@@ -100,7 +115,7 @@
 
     .mt-4 {
         margin-top: 1.5rem rem !important;
-    }
+    } */
 
 
 /* } */

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import './login.css'
+// import './login.css'
 
 export default function Login() {
     const formik = useFormik({

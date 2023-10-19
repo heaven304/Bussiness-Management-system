@@ -5,6 +5,8 @@ import Signin from './Signin';
 import Login from './Login';
 import Home from './Home';
 import Additem from './Additem';
+import Signin2 from './Signin2';
+import Login2 from './Login2';
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/login" element={<Login />} />
           <Route path="/additem" element={<Additem />} />
+          <Route path="/ss" element={<Signin2 />} />
+          <Route path="/sss" element={<Login2 />} />
 
         </Routes>
       </BrowserRouter>
