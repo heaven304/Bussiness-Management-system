@@ -7,17 +7,15 @@ import './Sidebar.css'; // Import your CSS file here
 import { AiOutlinePlusSquare, AiOutlineRight, AiOutlineSearch } from "react-icons/ai";
 
 const Dashboard = () => {
-  const [isSidebarClosed, setSidebarClosed] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isDarkMode, setDarkMode] = useState(false);
 
   const toggleSidebar = () => {
-    setSidebarClosed(!isSidebarClosed);
-    if (isSidebarClosed) {
-      document.getElementById('a').classList.add('Home')
-      document.getElementById('b').classList.remove('hk')
-    } else {
-      document.getElementById('a').classList.remove('Home')
+    setSidebarOpen(!isSidebarOpen);
+    if (!isSidebarOpen) {
       document.getElementById('b').classList.add('hk')
+    } else {
+      document.getElementById('b').classList.remove('hk')
     }
   };
 
@@ -25,9 +23,16 @@ const Dashboard = () => {
     setDarkMode(!isDarkMode);
   };
 
+  const closeSidebar = () => {
+    setSidebarOpen(false);
+  };
+
+
+
   return (
     <div className='body'>
-      <nav className={`sidebar ${isSidebarClosed ? 'close' : ''}`}>
+
+      <nav className={`sidebar ${isSidebarOpen ? 'open' : ''}`} onClick={closeSidebar}>
         <header>
           <div className="image-text">
             <span className="image">
@@ -40,15 +45,12 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <i className={`bx bx-chevron-right toggle  asd`} onClick={toggleSidebar}>  <AiOutlineRight /></i>
+          <i className={`bx bx-chevron-right toggle asd sidebar`}>  <AiOutlineRight /></i>
         </header>
 
         <div className="menu-bar">
           <div className="menu">
-            <li className="search-box" onClick={() => setSidebarClosed(false)}>
-              <i className='bx bx-search icon'> < AiOutlineSearch /></i>
-              <input type="text" placeholder="Search Games..." />
-            </li>
+          
 
             <ul className="menu-links menu-pp">
               <li className="nav-link">
@@ -103,26 +105,31 @@ const Dashboard = () => {
               </a>
             </li>
 
-            <li className="mode" onClick={toggleDarkMode}>
-              <div className="sun-moon">
-                <i className={`bx bx-moon icon moon ${isDarkMode ? 'dark' : ''}`}></i>
-                <i className={`bx bx-sun icon sun ${isDarkMode ? 'dark' : ''}`}></i>
-              </div>
-              <span className="mode-text text">{isDarkMode ? 'Light mode' : 'Dark mode'}</span>
 
-              <div className="toggle-switch">
-                <span className={`switch ${isDarkMode ? 'dark' : ''}`}></span>
-              </div>
-            </li>
           </div>
         </div>
       </nav>
 
+      <div
+        className={`menu-icon ${isSidebarOpen ? 'hide' : ''}`}
+        onClick={toggleSidebar}
+      >
+        <i>
+          <AiOutlineRight />
+        </i>
+      </div>
 
+      {isSidebarOpen && (
+        <div className='overlay' onClick={closeSidebar}></div>
+      )}
     </div>
+
+
   );
 };
 
 export default Dashboard;
+
+
 
 
