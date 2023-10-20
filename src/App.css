@@ -32,7 +32,105 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.invoice {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+.new-item-form {
+  margin-top: 20px;
+}
+
+.total {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+/* AddNewItemForm.css */
+.new-item-form {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.new-item-form h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.new-item-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-item-form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-item-form button:hover {
+  background-color: #0056b3;
+}
+
+/* App.css */
+/* Include your other styles as needed */
+
+/* Sidebar.css */
+/* Add responsive styles for your sidebar here */
+
+/* Layout.css */
+/* Add responsive styles for your layout here */
