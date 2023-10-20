@@ -45,7 +45,7 @@ const Dashboard = () => {
           <i className={`bx bx-chevron-right toggle asd sidebar`} onClick={closeSidebar}>  <AiOutlineRight /></i>
         </header>
 
-        <div className="menu-bar" >
+        <div className="menu-bar">
           <div className="menu" onClick={closeSidebar}>
 
 
