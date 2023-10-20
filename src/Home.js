@@ -13,24 +13,29 @@ export default function Home() {
 
         <>
             <Sidebar />
-            <div className='Home' id='a'>
-                <div>Home</div>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
-                <h1>ghjkl</h1>
+            <div className='hk' id='b'>
+
+
+
+                <div className='Home' id='a'>
+                    <div>Home</div>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                    <h1>ghjkl</h1>
+                </div>
             </div>
         </>
 
