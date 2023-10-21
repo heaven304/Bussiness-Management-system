@@ -67,7 +67,7 @@
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
-    box-shadow: 2px 2px 14px #695cfe;
+    box-shadow: 2px 2px 14px gray;
 }
 
 .sidebar.close {
@@ -396,7 +396,7 @@ header .image-text .profession {
 
     .body .sidebar.open {
         transform: translateX(0);
-        box-shadow: 2px 2px 14px #695cfe;
+        box-shadow: 2px 2px 14px gray;
     }
 
     .sidebar header .toggle {
@@ -415,3 +415,7 @@ header .image-text .profession {
         display: block;
     } */
 }
+
+
+
+
