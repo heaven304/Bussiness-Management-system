@@ -8,7 +8,7 @@ import { AiOutlinePlusSquare, AiOutlineRight, AiOutlineSearch } from "react-icon
 
 const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const [isDarkMode, setDarkMode] = useState(false);
+
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -19,9 +19,6 @@ const Dashboard = () => {
     }
   };
 
-  const toggleDarkMode = () => {
-    setDarkMode(!isDarkMode);
-  };
 
   const closeSidebar = () => {
     setSidebarOpen(false);
@@ -32,7 +29,7 @@ const Dashboard = () => {
   return (
     <div className='body'>
 
-      <nav className={`sidebar ${isSidebarOpen ? 'open' : ''}`} onClick={closeSidebar}>
+      <nav className={`sidebar ${isSidebarOpen ? 'open' : ''}`} >
         <header>
           <div className="image-text">
             <span className="image">
@@ -45,12 +42,12 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <i className={`bx bx-chevron-right toggle asd sidebar`}>  <AiOutlineRight /></i>
+          <i className={`bx bx-chevron-right toggle asd sidebar`} onClick={closeSidebar}>  <AiOutlineRight /></i>
         </header>
 
         <div className="menu-bar">
-          <div className="menu">
-          
+          <div className="menu" onClick={closeSidebar}>
+
 
             <ul className="menu-links menu-pp">
               <li className="nav-link">
@@ -97,7 +94,7 @@ const Dashboard = () => {
             </ul>
           </div>
 
-          <div className="bottom-content">
+          <div className="bottom-content" onClick={closeSidebar}>
             <li className="">
               <a href="#">
                 <i className='bx bx-log-out icon'></i>
