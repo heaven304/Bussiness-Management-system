@@ -1,14 +1,17 @@
 import React from 'react'
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Sidebar from './Sidebar'
+import './login.css'
+
 export default function Additem() {
 
 
     const formik = useFormik({
         initialValues: {
-            full_name: "",
+            shop_name: "",
             email: "",
-            password: "",
+            contec: "",
             confirm_password: ""
         },
         validationSchema: Yup.object({
@@ -19,7 +22,7 @@ export default function Additem() {
             email: Yup.string()
                 .email("Invalid email format")
                 .required("Required!"),
-            password: Yup.string()
+            contec: Yup.string()
                 .min(8, "Minimum 8 characters")
                 .required("Required!"),
             confirm_password: Yup.string()
@@ -32,66 +35,20 @@ export default function Additem() {
     });
     return (
         <>
+            <Sidebar />
+            <div className='hk' id='b'>
+                <div className='Home' id='a'>
+                    <div className='box'>
+                        <div className='box_show'>
+                            <h3>bill from</h3>
+                            <label> SHOP NAME </label> <br />
+                            <input type='text' name='shopname' className='in_size' />
+                        </div>
 
-            <div className="App">
-                <h1>Validation with Formik + Yup</h1>
+                    </div>
 
-                <form onSubmit={formik.handleSubmit}>
-                    <div>
-                        <label>Full Name</label>
-                        <input
-                            type="text"
-                            name="full_name"
-                            value={formik.values.full_name}
-                            onChange={formik.handleChange}
-                        />
-                        {formik.errors.full_name && formik.touched.full_name && (
-                            <p>{formik.errors.full_name}</p>
-                        )}
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            value={formik.values.email}
-                            onChange={formik.handleChange}
-                        />
-                        {formik.errors.email && formik.touched.email && (
-                            <p>{formik.errors.email}</p>
-                        )}
-                    </div>
-                    <div>
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            name="password"
-                            value={formik.values.password}
-                            onChange={formik.handleChange}
-                        />
-                        {formik.errors.password && formik.touched.password && (
-                            <p>{formik.errors.password}</p>
-                        )}
-                    </div>
-                    <div>
-                        <label>Confirm Password</label>
-                        <input
-                            type="password"
-                            name="confirm_password"
-                            value={formik.values.confirm_password}
-                            onChange={formik.handleChange}
-                        />
-                        {formik.errors.confirm_password &&
-                            formik.touched.confirm_password && (
-                                <p>{formik.errors.confirm_password}</p>
-                            )}
-                    </div>
-                    <div>
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
+                </div>
             </div>
-
         </>
 
     )
